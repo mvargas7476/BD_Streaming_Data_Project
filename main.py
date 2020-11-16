@@ -19,12 +19,15 @@ with open("data/art_load_balancer_spikes.csv") as data_file:
         points.append(Point(time, value))
 
 ds = DenStream()
+count = 0
 
 for point in points:
     if not ds.merge(point.timestamp, point):
         # Print outliers
         print(point.timestamp, point.value)
+        count  = count + 1
 
 
 plt.plot(times, values)
 plt.show()
+print("Number of outliers detected: " + str(count))
