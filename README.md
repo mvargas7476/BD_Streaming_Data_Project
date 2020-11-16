@@ -12,6 +12,16 @@ On windows, you can use ```pip install --user pipenv``` to install pipenv
 1. ```pipenv shell```
 1. ```python main.py```
 
+In a separate terminal, run
+```
+cd scripts
+./stream.sh
+```
+
+If you want to view the outliers file updating in real-time, run
+```
+tail -f output/
+```
 
 ## Requirements
 * Python **3.6**
