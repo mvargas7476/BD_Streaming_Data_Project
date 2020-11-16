@@ -13,7 +13,7 @@ class DenStream:
         self.max_radius = 0.3  # epsilon
         self.min_weight = 10  # mu
         self.decay_factor = 0.25  # lambda
-        self.outlier_threshold = 0.15  # beta
+        self.outlier_threshold = 0.11 # beta
 
     @staticmethod
     def nearest_cluster_index(current_time: datetime, clusters: List[Cluster], point: Point) -> int:
