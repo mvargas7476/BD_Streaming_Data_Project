@@ -10,7 +10,10 @@ On windows, you can use ```pip install --user pipenv``` to install pipenv
 1. [Install](https://pipenv.pypa.io/en/latest/install/#installing-pipenv) [pipenv](https://pipenv.pypa.io/en/latest/)
 1. ```pipenv install```
 1. ```pipenv shell```
-1. ```python main.py```
+1. ```python main.py stream/ output/```
+
+Replace the stream/ argument with the input directory if necessary.
+Replace the output/ argument with the output directory if necessary.
 
 In a separate terminal, run
 ```

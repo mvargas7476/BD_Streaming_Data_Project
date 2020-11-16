@@ -1,3 +1,5 @@
+"""Point.py"""
+
 from datetime import datetime
 
 

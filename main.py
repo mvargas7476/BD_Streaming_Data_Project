@@ -1,3 +1,5 @@
+"""main.py"""
+
 from datetime import datetime
 import sys
 from pathlib import Path

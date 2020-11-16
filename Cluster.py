@@ -1,3 +1,5 @@
+"""Cluster.py"""
+
 from datetime import datetime
 from math import sqrt, pow
 from typing import List
