@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/data" />
+      <excludeFolder url="file://$MODULE_DIR$/output" />
     </content>
     <orderEntry type="jdk" jdkName="Pipenv (BD_Streaming_Data_Project)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

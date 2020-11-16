@@ -1,3 +1,5 @@
+"""Cluster.py"""
+
 from datetime import datetime
 from math import sqrt, pow
 from typing import List
@@ -41,11 +43,11 @@ class Cluster:
         return self._cf1(current_time, new_point) / self.weight(current_time, new_point)
 
     def radius(self, current_time: datetime, new_point: Point = None) -> float:
-        return sqrt(
+        return sqrt(abs(
             abs(self._cf2(current_time, new_point)) / self.weight(current_time, new_point)
             -
             pow(abs(self._cf1(current_time, new_point)) / self.weight(current_time, new_point), 2)
-        )
+        ))
 
     def distance(self, current_time: datetime, point: Point) -> float:
         return abs(self.center(current_time) - point.value)

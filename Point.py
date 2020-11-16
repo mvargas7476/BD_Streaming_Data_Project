@@ -1,3 +1,5 @@
+"""Point.py"""
+
 from datetime import datetime
 
 
@@ -16,3 +18,6 @@ class Point:
 
     def __sub__(self, other):
         return self._value - other.value
+
+    def __str__(self):
+        return str(self._timestamp) + "," + str(self._value)
